@@ -5,10 +5,11 @@ import hotkeystitle from '../public/images/hotkeystitle.png'
 
 const Titlehead = () => {
   return (
-    <div>
+    <div className='text-center'>
           <Image src={gradbox1} alt={'ok'} fill />
           <div>
-            <Image src={hotkeystitle} alt={'ok'} fill />
+            <Image src={hotkeystitle} alt={'ok'} fill  />
+            
           </div>
     </div>
   )
