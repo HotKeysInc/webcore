@@ -6,7 +6,7 @@ import Titlehead from '../components/Titlehead'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className='bg-black'>
 <Titlehead></Titlehead>
 </div>
   )

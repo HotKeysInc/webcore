@@ -2,13 +2,17 @@ import Image from 'next/image'
 import React from 'react'
 import gradbox1 from '../public/images/gradbox1.png'
 import hotkeystitle from '../public/images/hotkeystitle.png'
+import blehground from '../public/images/blehground.png'
 
 const Titlehead = () => {
   return (
-    <div className='text-center'>
-          <Image src={gradbox1} alt={'ok'} fill />
-          <div>
-            <Image src={hotkeystitle} alt={'ok'} fill  />
+    <div>
+          <Image src={blehground} alt={'ok'} fill />
+          <div className="relative h-[200px] w-[600px] align-middle m-96">
+            <Image  src={hotkeystitle} alt={'ok'} fill  />
+            
+              <Image  className='m-72 mt-0' src={gradbox1} alt="ok"></Image>
+            
             
           </div>
     </div>
