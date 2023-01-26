@@ -12,6 +12,8 @@ const Titlehead = () => {
             <Image  src={hotkeystitle} alt={'ok'} fill  />
             
               <Image  className='m-72 mt-0' src={gradbox1} alt="ok"></Image>
+              <Image  className='m-72 mt-0' src={gradbox1} alt="ok"></Image>
+
             
             
           </div>
@@ -20,3 +22,4 @@ const Titlehead = () => {
 }
 
 export default Titlehead
+//why do i have to do it for imports
