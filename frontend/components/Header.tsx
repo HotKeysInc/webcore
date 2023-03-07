@@ -1,109 +1,40 @@
-/* eslint-disable jsx-a11y/alt-text */
-'use client'
-import { useState } from 'react';
-import { createStyles, Header, Group, ActionIcon, Container, Burger, Title } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+/* eslint-disable @next/next/no-html-link-for-pages */
+import Link from "next/link";
+import Image from "next/image";
 
-import Image from 'next/image';
-import sollogo from '../public/solanaLogo.png'
-import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
-import { getSpacingValue } from '@mantine/core/lib/Box/style-system-props/value-getters/get-spacing-value';
-
-const useStyles = createStyles((theme) => ({
-  inner: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: 56,
-
-    [theme.fn.smallerThan('sm')]: {
-      justifyContent: 'flex-start',
-    },
-  },
-
-  links: {
-    width: 260,
-
-    [theme.fn.smallerThan('sm')]: {
-      display: 'none',
-    },
-  },
-
-  social: {
-    width: 260,
-
-    [theme.fn.smallerThan('sm')]: {
-      width: 'auto',
-      marginLeft: 'auto',
-    },
-  },
-
-  burger: {
-    marginRight: theme.spacing.md,
-
-    [theme.fn.largerThan('sm')]: {
-      display: 'none',
-    },
-  },
-
-  link: {
-    display: 'block',
-    lineHeight: 1,
-    padding: '8px 12px',
-    borderRadius: theme.radius.sm,
-    textDecoration: 'none',
-    color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
-    fontSize: theme.fontSizes.sm,
-    fontWeight: 500,
-
-    '&:hover': {
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[0],
-    },
-  },
-
-  linkActive: {
-    '&, &:hover': {
-      backgroundColor: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).background,
-      color: theme.fn.variant({ variant: 'light', color: theme.primaryColor }).color,
-    },
-  },
-}));
-
-interface HeaderMiddleProps {
-  links: { link: string; label: string }[];
-}
-
-export function HeaderMiddle() {
-
-  const { classes, cx } = useStyles();
-
-
-
+export function Header() {
   return (
-    <Header sx={(theme) => ({
-      background: theme.colors.black,
-      padding: theme.spacing.xs,
-      maxHeight: 200
-    ,
-      
-    })} mb={100} height={'20'}  >
-
-      <Container className={classes.inner}>
+    <nav className="navbar bg-transparent px-4 py-8 md:px-16">
+      <div className="flex-1">
+        <a
+          href="/"
+          className="btn-ghost btn btn-lg text-white h-"
+        >
+          <Image
+            src="/hotkeyslogo.png"
+            alt="Nucleus Finance Logo"
+            width={170}
+            height={75}
+          />
          
-        <Image src={sollogo} width={170} height={27}/>
-        
+        </a>
+      </div>
+
+      <div className="flex-none">
+        <a
+          href="/app"
+          className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white"
+        >
+          Docs
+        </a>
        
-        
-
-
-        
-
-        
-           <WalletMultiButton className='marginLeft' ></WalletMultiButton> 
-         
-        
-      </Container>
-      
-    </Header>
+        <a
+          href="/app"
+          className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white"
+        >
+          Get Started
+        </a>
+      </div>
+    </nav>
   );
 }

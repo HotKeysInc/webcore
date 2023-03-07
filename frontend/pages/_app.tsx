@@ -1,4 +1,4 @@
-import { MantineProvider } from "@mantine/core";
+import { BackgroundImage, MantineProvider } from "@mantine/core";
 import React, { useMemo } from "react";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui";
@@ -13,6 +13,7 @@ import {
 } from "@solana/wallet-adapter-wallets";
 import { clusterApiUrl } from "@solana/web3.js";
 import dynamic from "next/dynamic";
+import '../styles/globals.css';
 
 require("@solana/wallet-adapter-react-ui/styles.css");
 require("../styles/globals.css");
@@ -29,14 +30,19 @@ function MyApp({ Component, pageProps }) {
   );
 
   return (
-   
+
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletModalProvider>
           <MantineProvider
       withGlobalStyles
       withNormalizeCSS
-      theme={{ colorScheme: "dark"}}
+      theme={{ colorScheme: "dark" , colors: {
+        black: ['#000000'],
+        dark: [
+          '#000000',
+        ],
+      },}}
     ><NotificationsProvider>
             <Component {...pageProps} />
             </NotificationsProvider>
@@ -44,6 +50,7 @@ function MyApp({ Component, pageProps }) {
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
+
     
   );
 }
