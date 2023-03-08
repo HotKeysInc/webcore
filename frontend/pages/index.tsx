@@ -151,7 +151,7 @@ const Home: NextPage = (props) => {
           <h1 className="text-white text-center text-poppins font-bold pt-10 text-4xl pb-6">Try it out yourself 🛠️</h1>
           
          
-          <WalletMultiButton className="justify-center content-center bg-white "></WalletMultiButton>
+          <WalletMultiButton className="justify-center content-center "></WalletMultiButton>
       
 
           </Stack>
