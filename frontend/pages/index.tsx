@@ -111,10 +111,10 @@ const Home: NextPage = (props) => {
   return (
     <>
       <Head>
-        <title>🔑Hotkeys</title>
+        <title>Hotkeys</title>
         <meta name="description" content="cross-chain investments made easy" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/nflogo.png" />
+        <link rel="icon" href="/iconhk.png" />
       </Head>
 <Header></Header>
 
