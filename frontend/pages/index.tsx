@@ -19,11 +19,17 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 import Head from "next/head";
 import { Header } from "../components/Header";
 
-
 const Home: NextPage = (props) => {
   const { publicKey } = useWallet();
 
-  const [words, setWords] = useState([" professionals.", " creators.", "gamers.","company owners.", "vc's.", "community managers."]);
+  const [words, setWords] = useState([
+    " professionals.",
+    " creators.",
+    "gamers.",
+    "company owners.",
+    "vc's.",
+    "community managers.",
+  ]);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
   useEffect(() => {
@@ -103,10 +109,6 @@ const Home: NextPage = (props) => {
       return "Account already has SOL 💰, bich dont be greedy";
     }
   }
-  
-
-  
-
 
   return (
     <>
@@ -116,79 +118,104 @@ const Home: NextPage = (props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/iconhk.png" />
       </Head>
-<Header></Header>
+      <Header></Header>
 
       <div className="content-center justify-center w-screen h-screen pt-48">
         <Stack align="center">
           <h1 className="text-white text-2xl md:text-5xl lg:text-6xl xl:text-7xl  font-poppins text-center pb-36 font-light">
             One step software key solution
             <br /> for{" "}
-            <span style={{ color: "#42FFC9", textDecoration: "underline", textAlign: "start" }}> 
-            {words[currentWordIndex]}
+            <span
+              style={{
+                color: "#42FFC9",
+                textDecoration: "underline",
+                textAlign: "start",
+              }}
+            >
+              {words[currentWordIndex]}
             </span>
           </h1>
-          <Image className="pt-32 animate-slide-left" src="/graphic.png" alt="no" />
+          <Image
+            className="pt-32 animate-slide-left"
+            src="/graphic.png"
+            alt="no"
+          />
         </Stack>
       </div>
-      <h2 className="text-white px-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold  font-poppins text-left py-10">Typescript  <span style={{ color: "#42FFC9", fontWeight: "bold" }}> 
-            SDK
-            </span></h2>
+      <h2 className="text-white px-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold  font-poppins text-left py-10">
+        Typescript{" "}
+        <span style={{ color: "#42FFC9", fontWeight: "bold" }}>SDK</span>
+      </h2>
       <Flex
-      mih={50}
-      
-      gap="xs"
-      // mantine mein issue kholna hai
-      justify="center"
-      align="center"
-      direction="row"
-      
-    >
-      <Image src="/code.png" width={600} alt="no" >
-      </Image>
-      <Stack justify="center" h={497} >
-        <div className="bg-[#121212] h-[220px] w-[550px] rounded-md" >
-          <Stack justify="center" >
-          <h1 className="text-white text-center text-poppins font-bold pt-10 text-4xl pb-6">Try it out yourself 🛠️</h1>
-          
-         
-          <WalletMultiButton className="justify-center content-center "></WalletMultiButton>
-      
+        mih={50}
+        gap="xs"
+        // mantine mein issue kholna hai
+        justify="center"
+        align="center"
+        direction="row"
+      >
+        <Image src="/code.png" width={600} alt="no"></Image>
+        <Stack justify="center" align="center" h={497}>
+          <div className="bg-[#121212] h-[222px] w-[550px] rounded-xl">
+            <Stack justify="center">
+              <h1 className="text-white text-center text-poppins pt-10 text-4xl pb-6  font-semibold ">
+                Try it out yourself 🛠️
+              </h1>
 
-          </Stack>
-        </div>
-        <div className="bg-[#121212] h-[220px] w-[550px] rounded-md" >
-        <h1 className="text-white text-center text-poppins font-bold pt-10 text-3xl pb-6">no devnet funds? get some airdropped? 🛠️</h1>
-        <Button
-          variant="light"
-          size="lg"
-          className="justify-center content-center"
-          onClick={async() =>{
-           
-            // const pubkey = new Web3.PublicKey(
-            //   "651yky3ijgSPyPZ8L5s1izSbnh5xDHb4GSATk8JLbzsK"
-            // );
-            const connection2 = await new Web3.Connection(Web3.clusterApiUrl("devnet"));
-            Airdropifbroke(publicKey, connection2);
-            
-            
-          }}
-        >
-          Let em tokens flow 💸
-        </Button>
-        </div>
-      </Stack>
-    </Flex>
+              <button
+                  className="[background:linear-gradient(180deg,_#38e7b0_47.4%,_#177656)]  opacity-[0.8] border-[1px] border-solid border-black text-black font-poppins
+                 py-2 px-4 rounded-xl font-bold text-xl"
+                >
+                  <WalletMultiButton className="text-black font-poppins font-bold text-xl bg-inherit"></WalletMultiButton>
+                </button>
+              {/* <WalletMultiButton className="[background:linear-gradient(180deg,_#38e7b0_47.4%,_#177656)]  opacity-[0.8] border-[1px] border-solid border-black text-black font-poppins rounded-xl"></WalletMultiButton> */}
+            </Stack>
+          </div>
+          <div className="bg-[#121212] h-[237px] w-[550px] rounded-xl">
+            <h1 className="text-white text-center text-poppins font-normal pt-10 text-4xl pb-6">
+              no devnet funds?{" "}
+              <span className="text-white text-center text-poppins font-bold pt-10 text-4xl pb-6">
+                get some airdropped.
+              </span>{" "}
+              🛠️
+            </h1>
 
+            <Stack align="center">
+              <span>
+                <button
+                  className="[background:linear-gradient(180deg,_#38e7b0_47.4%,_#177656)]  opacity-[0.8] border-[1px] border-solid border-black text-black font-poppins
+                 py-2 px-4 rounded-xl font-bold text-xl mr-5"
+                  onClick={async () => {
+                    const connection2 = await new Web3.Connection(
+                      Web3.clusterApiUrl("devnet")
+                    );
+                    Airdropifbroke(publicKey, connection2);
+                  }}
+                >
+                  airdrop
+                </button>
 
-    <h3 className="font-poppins text-2xl  md:text-2xl lg:text-3xl xl:text-4xl font-extralight text-center text-[#42FFC9] pt-36 italic">companies onboarded</h3>
-    <Image src="fake.png" alt="no" className="pt-16"></Image>
-<br></br>
+                <button
+                  className="[background:linear-gradient(180deg,_#38e7b0_47.4%,_#177656)]  opacity-[0.8] border-[1px] border-solid border-black text-black font-poppins
+                 py-2 px-4 rounded-xl font-bold text-xl"
+                >
+                  try out
+                </button>
+              </span>
+            </Stack>
+          </div>
+        </Stack>
+      </Flex>
 
-    <div className="h-70 bg-[#42FFC9] flex justify-center items-center text-black font-bold">
-  HotKeys 
-</div>
+      <h3 className="font-poppins text-2xl  md:text-2xl lg:text-3xl xl:text-4xl font-extralight text-center text-[#42FFC9] pt-36 italic">
+        companies onboarded
+      </h3>
+      <Image src="fake.png" alt="no" className="pt-16"></Image>
+      <br></br>
 
-
+      <div className="h-70 bg-[#42FFC9] flex justify-center items-center text-black font-bold">
+        HotKeys
+      </div>
     </>
   );
 };
