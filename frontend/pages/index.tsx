@@ -1,22 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { NextPage } from "next";
 import { useState, useEffect } from "react";
-import {
-  AppShell,
-  BackgroundImage,
-  Button,
-  Stack,
-  Title,
-  Image,
-  Alert,
-  Container,
-  Flex,
-} from "@mantine/core";
-import * as Web3 from "@solana/web3.js";
+import { Image } from "@mantine/core";
+
 import { useWallet } from "@solana/wallet-adapter-react";
-import { showNotification, updateNotification } from "@mantine/notifications";
-import { IconAlertCircle, IconCheck } from "@tabler/icons";
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+
 import Head from "next/head";
 import { Header } from "../components/Header";
 import { Sdkdiv } from "../components/sdkdiv";
@@ -54,36 +42,37 @@ const Home: NextPage = (props) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/iconhk.png" />
       </Head>
-      <Header></Header>
 
-      <div className="content-center justify-center w-screen h-screen pt-24 md:pt-48 lg:pt-48 xl:pt-48">
-        <Stack align="center">
-          <h1 className="text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl  font-poppins text-center pb-36 font-light">
-            One step software key solution
-            <br /> for{" "}
-            <span
-              style={{
-                color: "#42FFC9",
-                textDecoration: "underline",
-                textAlign: "start",
-              }}
-            >
-              {words[currentWordIndex]}
-            </span>
-          </h1>
-          <Image
-            className=" pt-16 md:pt-32 animate-slide-left  !object-cover sm:h-full  "
-            src="/graphic.png"
-            alt="no"
-            
-          />
-        </Stack>
+      <Header />
+
+      <div className="h-screen w-screen">
+        <Image
+          src="grad.png"
+          className="w-full h-full absolute top-0 left-0 z-4"
+          alt="no"
+        />
+        <h1 className=" absolute left-0 right-0 text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-poppins text-center font-light z-10">
+          One step software key solution
+          <br /> for{" "}
+          <span
+            style={{
+              color: "#42FFC9",
+              textDecoration: "underline",
+              textAlign: "start",
+            }}
+          >
+            {words[currentWordIndex]}
+          </span>
+        </h1>
       </div>
-      <h2 className="text-white px-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold  font-poppins text-left py-10">
-        Typescript{" "}
-        <span style={{ color: "#42FFC9", fontWeight: "bold" }}>SDK</span>
-      </h2>
-      <Sdkdiv />
+
+      <div className="h-screen flex flex-col ">
+        <h2 className="text-white px-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold  font-poppins text-left py-10">
+          Typescript{" "}
+          <span style={{ color: "#42FFC9", fontWeight: "bold" }}>SDK</span>
+        </h2>
+        <Sdkdiv />
+      </div>
 
       {/* <h3 className="font-poppins text-2xl  md:text-2xl lg:text-3xl xl:text-4xl font-extralight text-center text-[#42FFC9] pt-36 italic">
         companies onboarded
