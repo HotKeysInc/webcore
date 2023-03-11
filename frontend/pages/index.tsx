@@ -45,13 +45,13 @@ const Home: NextPage = (props) => {
 
       <Header />
 
-      <div className="h-screen w-screen">
-        <Image
+      <div className="flex flex-col h-screen w-screen justify-center px-10">
+        <img
           src="grad.png"
           className="w-full h-full absolute top-0 left-0 z-4"
           alt="no"
         />
-        <h1 className=" absolute left-0 right-0 text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-poppins text-center font-light z-10">
+        <h1 className=" text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-poppins text-center z-10 pb-24 md:pb-48  lg:pb-48  xl:pb-48 font-light font-poppins">
           One step software key solution
           <br /> for{" "}
           <span
