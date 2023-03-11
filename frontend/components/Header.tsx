@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from "next/link";
 import Image from "next/image";
@@ -10,11 +11,11 @@ export function Header() {
           href="/"
           className="btn-ghost btn btn-lg text-white h-"
         >
-          <Image
+          <img
             src="/hotkeyslogo.png"
-            alt="Nucleus Finance Logo"
-            width={170}
-            height={75}
+            alt="hk Logo"
+            className="md:h-[75px] md:w-[170px] h-[35px] w-[70px]"
+
           />
          
         </a>
