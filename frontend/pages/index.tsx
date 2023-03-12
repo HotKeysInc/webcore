@@ -45,13 +45,14 @@ const Home: NextPage = (props) => {
 
       <Header />
 
-      <div className="flex flex-col h-screen w-screen justify-center px-10">
+      <div className="flex flex-col h-screen w-screen justify-center ">
         <img
           src="grad.png"
-          className="w-full h-full absolute top-0 left-0 z-4"
+          className="w-full h-full absolute top-0 left-0 z-0"
           alt="no"
         />
-        <h1 className=" text-white text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-poppins text-center z-10 pb-24 md:pb-48  lg:pb-48  xl:pb-48 font-light font-poppins">
+       
+        <h1 className=" text-white text-5xl sm:text-left md:text-center lg:text-center xl:text-center leading-snug md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl font-poppins px-8 z-10 pb-24  md:pb-48  lg:pb-48  xl:pb-48 font-light font-poppins ">
           One step software key solution
           <br /> for{" "}
           <span
@@ -63,11 +64,16 @@ const Home: NextPage = (props) => {
           >
             {words[currentWordIndex]}
           </span>
+          
         </h1>
+        <br></br>
+        <img src="/div.png" className="align-middle px-8 md:px-96 md:pb-12 lg:px-96 lg:pb-12 xl:px-96 xl:pb-12  " alt="no" ></img>
+      
+      
       </div>
 
       <div className="h-screen flex flex-col ">
-        <h2 className="text-white px-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold  font-poppins text-left py-10">
+        <h2 className="text-white px-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold  font-poppins text-left pb-10">
           Typescript{" "}
           <span style={{ color: "#42FFC9", fontWeight: "bold" }}>SDK</span>
         </h2>

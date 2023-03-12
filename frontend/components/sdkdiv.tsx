@@ -110,8 +110,8 @@ export function Sdkdiv() {
 
           <h1 className="text-white text-center text-poppins font-normal pt-10  pb-6 opacity-80 text-xl md:text-2xl lg:text-4xl xl:text-4xl ">
             no devnet funds?
-            <span className="text-white text-center text-poppins font-semibold pt-10 opacity-90 text-xl md:text-2xl lg:text-4xl xl:text-4xl pb-6  px-1 md:px-3 lg:px-3 xl:px-3  ">
-              get some airdropped.
+            <span className="text-white text-center text-poppins font-semibold pt-10 opacity-90 text-xl md:text-2xl lg:text-4xl xl:text-4xl pb-6  px-1 md:px-3   ">
+              get  <br/> some airdropped.
             </span>
             🛠️
           </h1>

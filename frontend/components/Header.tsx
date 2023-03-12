@@ -22,19 +22,19 @@ export function Header() {
       </div>
 
       <div className="flex-none">
-        <a
-          href="/app"
+        <button
+          
           className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white"
         >
           Docs
-        </a>
+        </button>
        
-        <a
-          href="/app"
+        <button
+          
           className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white"
         >
           Get Started
-        </a>
+        </button>
       </div>
     </nav>
   );
