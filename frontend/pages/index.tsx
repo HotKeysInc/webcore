@@ -52,7 +52,7 @@ const Home: NextPage = (props) => {
           alt="no"
         />
        
-        <h1 className=" text-white text-5xl sm:text-left md:text-center lg:text-center xl:text-center leading-snug md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl font-poppins px-8 z-10 pb-24  md:pb-48  lg:pb-48  xl:pb-48 font-light font-poppins ">
+        <h1 className=" text-white text-5xl sm:text-left md:text-center lg:text-center xl:text-center leading-snug md:leading-normal md:text-5xl lg:text-6xl xl:text-7xl font-poppins px-8 z-10 pb-20  md:pb-48  lg:pb-48  xl:pb-48 font-light font-poppins ">
           One step software key solution
           <br /> for{" "}
           <span
@@ -67,7 +67,7 @@ const Home: NextPage = (props) => {
           
         </h1>
         <br></br>
-        <img src="/div.png" className="align-middle px-8 md:px-96 md:pb-12 lg:px-96 lg:pb-12 xl:px-96 xl:pb-12  " alt="no" ></img>
+        <img src="/div.png" className="align-middle px-8 md:px-96 md:pb-12 lg:px-96 lg:pb-12 xl:px-96 xl:pb-12 z-10 " alt="no" ></img>
       
       
       </div>

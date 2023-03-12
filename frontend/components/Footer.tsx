@@ -42,7 +42,7 @@ export function Footer() {
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
                 <a
-                  href="https://github.com/themesberg/flowbite"
+                  href="https://github.com/HotKeysInc"
                   className="hover:underline "
                 >
                   Github
@@ -50,10 +50,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://discord.gg/4eeurUVvTy"
+                  href=""
                   className="hover:underline"
                 >
-                  Discord
+                  Twitter
                 </a>
               </li>
             </ul>
