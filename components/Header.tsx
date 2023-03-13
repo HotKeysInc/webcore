@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <nav className="navbar bg-transparent px-4 py-8 md:px-16">
+    <nav className="navbar bg-transparent px-4 py-8 md:px-16 z-10">
       <div className="flex-1">
         <a
           href="/"
@@ -22,19 +22,20 @@ export function Header() {
       </div>
 
       <div className="flex-none">
-        <button
-          
-          className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white"
+        <a
+        role="button"
+          href="https://hotkeysinc.gitbook.io/hotkeyssdk/"
+          className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white hover:cursor-pointer z-10 "
         >
           Docs
-        </button>
+        </a>
        
-        <button
-          
-          className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white"
+        <a
+          href="https://github.com/HotKeysInc/sdk#readme"
+          className="btn-ghost btn bg-black bg-opacity-30 text-xl normal-case backdrop-blur-md text-white z-10"
         >
           Get Started
-        </button>
+        </a>
       </div>
     </nav>
   );

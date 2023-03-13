@@ -9,6 +9,8 @@ import Head from "next/head";
 import { Header } from "../components/Header";
 import { Sdkdiv } from "../components/sdkdiv";
 import { Footer } from "../components/Footer";
+import { showNotification } from "@mantine/notifications";
+import { IconCheck } from "@tabler/icons";
 
 const Home: NextPage = (props) => {
   const { publicKey } = useWallet();
@@ -21,6 +23,7 @@ const Home: NextPage = (props) => {
     "artists.",
     "gamers.",
     "designers.",
+    "companies."
   ]);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
@@ -45,7 +48,7 @@ const Home: NextPage = (props) => {
 
       <Header />
 
-      <div className="flex flex-col h-screen w-screen justify-center ">
+      <div className="flex flex-col h-screen w-screen justify-center items-center ">
         <img
           src="grad.png"
           className="w-full h-full absolute top-0 left-0 z-0"
@@ -67,7 +70,20 @@ const Home: NextPage = (props) => {
           
         </h1>
         <br></br>
-        <img src="/div.png" className="align-middle px-8 md:px-96 md:pb-12 lg:px-96 lg:pb-12 xl:px-96 xl:pb-12 z-10 " alt="no" ></img>
+       
+        <img onClick={()=> {
+          navigator.clipboard.writeText("npm i hotkeys-sdk");
+
+          showNotification({
+            icon: <IconCheck size="1.2rem" />,
+            id: "load-data",
+            loading: false,
+            title: "Copied to Clipboard",
+            autoClose: true,
+            disallowClose: true,
+            message: "back to the terminal"
+          });
+        }} src="/div.png" className="cursor-pointer align-middle md:w-3/12 md:h-[130px] lg:h-32 xl:h-32 pb-16 z-10  px-8  " alt="no" ></img>
       
       
       </div>

@@ -24,14 +24,12 @@ export function Footer() {
             </h2>
             <ul className="text-gray-600 dark:text-gray-400">
               <li className="mb-4">
-                <a href="https://flowbite.com/" className="hover:underline">
+                <a href="https://hotkeysinc.gitbook.io/hotkeyssdk/" className="hover:underline">
                   SDK docs
                 </a>
               </li>
               <li>
-                <a href="https://tailwindcss.com/" className="hover:underline">
-                 
-                </a>
+
               </li>
             </ul>
           </div>
