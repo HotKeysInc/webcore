@@ -130,9 +130,11 @@ export function Sdkdiv() {
                 airdrop →
               </button>
 
-              <button
+              <button onClick={()=> {
+                window.location.href = 'https://codesandbox.io/p/github/HotKeysInc/sdksandbox'
+              }}
                 className="bg-white  opacity-[0.8] border-[1px] border-solid border-black text-black font-poppins
-             py-2 px-5 rounded-xl font-bold text-xs md:text-lg lg:text-xl xl:text-xl"
+             py-2 px-5 rounded-xl font-bold text-xs md:text-lg lg:text-xl xl:text-xl hover:cursor-pointer "
               >
                 try out
               </button>
