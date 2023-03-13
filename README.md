@@ -1,4 +1,3 @@
-# HotKeys
-frontend for the hotkeys ecosystem.
+# SolFaucets
 
-
+let's build a devnet faucet shall we?
