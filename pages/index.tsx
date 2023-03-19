@@ -43,7 +43,7 @@ const Home: NextPage = (props) => {
           content="software key solution for professionals"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/iconf.png" />
+        <link rel="icon" href="/iconf.jpg" />
       </Head>
 
       <Header />
