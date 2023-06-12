@@ -131,7 +131,7 @@ export function Sdkdiv() {
               </button>
 
               <button onClick={()=> {
-                window.location.href = 'https://codesandbox.io/p/github/HotKeysInc/sdksandbox'
+                window.location.href = 'https://hotkeysinc.gitbook.io/hotkeyssdk/'
               }}
                 className="bg-white  opacity-[0.8] border-[1px] border-solid border-black text-black font-poppins
              py-2 px-5 rounded-xl font-bold text-xs md:text-lg lg:text-xl xl:text-xl hover:cursor-pointer "
