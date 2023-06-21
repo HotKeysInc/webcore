@@ -26,7 +26,7 @@ export default function FeatureSection() {
               return (
                 <div
                   key={index}
-                  className="mb-8 bg-[#131313] bg-opacity-60 backdrop-blur-lg drop-shadow-lg sm:break-inside-avoid rounded-2xl border-solid border border-[#257C60] border-opacity-50 pt-4"
+                  className="mb-8 bg-[#070707] bg-opacity-60 backdrop-blur-lg drop-shadow-lg sm:break-inside-avoid rounded-2xl border-solid border border-[#257C60] border-opacity-50 pt-4"
                 >
                   <h2 className="text-white px-10 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold font-poppins text-left pb-10">
                   {feature.title}
