@@ -98,9 +98,9 @@ export function Sdkdiv() {
       <div className="rounded-xl w-4/5 md:w-5/12 lg:w-5/12 xl:w-5/12 h-full bg-[#121212] ">
         <Image src="/code2.png " alt="code"></Image>
       </div>
-      <div className="rounded-xl w-4/5 md:w-5/12 lg:w-5/12 xl:w-5/12 h-full bg-[#121212] ">
-        <Stack justify="space-around" align="center">
-          <h1 className="text-white text-center text-poppins pt-10 text-2xl md:text-4xl lg:text-4xl xl:text-5xl pb-6  font-semibold opacity-90  ">
+      <div className="rounded-xl w-4/5 md:w-5/12 lg:w-5/12 xl:w-5/12 h-full bg-[#121212] flex flex-col items-center justify-center ">
+        <div className="flex flex-col items-center justify-center content-center">
+          <h1 className="text-white text-center text-poppins text-2xl md:text-4xl lg:text-4xl xl:text-5xl pb-6  font-semibold opacity-90  ">
             Try it out yourself ↘️
           </h1>
 
@@ -141,7 +141,7 @@ export function Sdkdiv() {
             </span>
           </Stack>
           {/* <WalletMultiButton className="[background:linear-gradient(180deg,_#38e7b0_47.4%,_#177656)]  opacity-[0.8] border-[1px] border-solid border-black text-black font-poppins rounded-xl"></WalletMultiButton> */}
-        </Stack>
+        </div>
       </div>
     </Flex>
   );
