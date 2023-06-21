@@ -91,7 +91,7 @@ const Home: NextPage = (props) => {
         ></img>
       </div>
 
-      <div className="pb-24 px-12">
+      <div className="pb-24 md:px-12">
         <FeatureSection />
       </div>
 
