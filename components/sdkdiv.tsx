@@ -100,15 +100,15 @@ export function Sdkdiv() {
       </div>
       <div className="rounded-xl w-4/5 md:w-5/12 lg:w-5/12 xl:w-5/12 h-full bg-[#121212] flex flex-col items-center justify-center ">
         <div className="flex flex-col items-center justify-center content-center">
-          <h1 className="text-white text-center text-poppins text-2xl md:text-4xl lg:text-4xl xl:text-5xl pb-6  font-semibold opacity-90  ">
+          <h1 className="text-white text-center text-poppins text-2xl md:text-4xl lg:text-4xl xl:text-5xl pb-6  font-semibold opacity-90 mt-5 md:mt-0  ">
             Try it out yourself ↘️
           </h1>
 
-          <WalletMultiButton className="![background:linear-gradient(180deg,_#38e7b0_47.4%,_#177656)] !bg-opacity-80 !text-black justify-center content-center items-center text-poppins !font-bold pb-5">
+          <WalletMultiButton className="mt-5 ![background:linear-gradient(180deg,_#38e7b0_47.4%,_#177656)] !bg-opacity-80 !text-black justify-center content-center items-center text-poppins !font-bold pb-5 ">
             {/* <span className="text-black font-poppins font-semibold content-center justify-center">Connect Wallet</span> */}
           </WalletMultiButton>
 
-          <h1 className="text-white text-center text-poppins font-normal pt-10  pb-6 opacity-80 text-xl md:text-2xl lg:text-4xl xl:text-4xl ">
+          <h1 className="text-white text-center text-poppins font-normal pt-10 md:pt-20  pb-6 opacity-80 text-xl md:text-2xl lg:text-4xl xl:text-4xl ">
             no devnet funds?
             <span className="text-white text-center text-poppins font-semibold pt-10 opacity-90 text-xl md:text-2xl lg:text-4xl xl:text-4xl pb-6  px-1 md:px-3   ">
               get  <br/> some airdropped.
